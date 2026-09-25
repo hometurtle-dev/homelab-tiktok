@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Homelab Calendrier</title>
+<style>
+:root{--bg:#faf8f5;--fg:#1c1a17;--dim:#6b645c;--line:#e2ddd5;--accent:#c2410c}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#17150f;--fg:#f0ece5;--dim:#a39b90;--line:#332e26;--accent:#fb923c}}
+:root[data-theme="dark"]{--bg:#17150f;--fg:#f0ece5;--dim:#a39b90;--line:#332e26;--accent:#fb923c}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;padding:48px 16px}
+.wrap{max-width:640px;margin:0 auto}
+h1{font-size:1.75rem;margin:0 0 8px}
+.sub{color:var(--dim);margin:0 0 32px}
+h2{font-size:1.05rem;margin:32px 0 8px}
+a{color:var(--accent)}
+nav{border-top:1px solid var(--line);margin-top:40px;padding-top:16px;font-size:.9rem}
+nav a{margin-right:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>Homelab Calendrier</h1>
+<p class="sub">Outil personnel de suivi de calendrier éditorial.</p>
+
+<h2>Ce que fait cette application</h2>
+<p>Il s'agit d'un outil privé, auto-hébergé et non commercial, utilisé par une seule
+personne : son propriétaire. Il rassemble dans un calendrier les statistiques
+publiques des publications de <em>son propre compte</em> sur plusieurs plateformes
+(vues, mentions J'aime, commentaires, partages), afin d'organiser un planning de
+publication.</p>
+
+<h2>Usage de l'API TikTok</h2>
+<p>L'application utilise le <strong>Login Kit</strong> et le périmètre
+<code>video.list</code> en <strong>lecture seule</strong>, uniquement sur le compte
+TikTok du propriétaire, qui donne son autorisation explicite. Elle ne publie rien,
+ne modifie rien, et n'accède à aucune donnée d'un tiers.</p>
+
+<nav>
+<a href="./terms.html">Conditions d'utilisation</a>
+<a href="./privacy.html">Politique de confidentialité</a>
+</nav>
+</div>
+</body>
+</html>
